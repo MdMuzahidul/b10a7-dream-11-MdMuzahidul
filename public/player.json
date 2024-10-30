@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "image": "image_001.jpg",
+    "name": "Alex Johnson",
+    "country_name": "Australia",
+    "player_category": "All-Rounder",
+    "rating": 87,
+    "batting_style": "Right-hand",
+    "price": 950000
+  },
+  {
+    "id": 2,
+    "image": "image_002.jpg",
+    "name": "Rohan Desai",
+    "country_name": "India",
+    "player_category": "Batsman",
+    "rating": 90,
+    "batting_style": "Left-hand",
+    "price": 1200000
+  },
+  {
+    "id": 3,
+    "image": "image_003.jpg",
+    "name": "Liam Parker",
+    "country_name": "England",
+    "player_category": "Bowler",
+    "rating": 78,
+    "batting_style": "Right-hand",
+    "price": 850000
+  },
+  {
+    "id": 4,
+    "image": "image_004.jpg",
+    "name": "Ahmed Hassan",
+    "country_name": "Pakistan",
+    "player_category": "All-Rounder",
+    "rating": 85,
+    "batting_style": "Right-hand",
+    "price": 1100000
+  },
+  {
+    "id": 5,
+    "image": "image_005.jpg",
+    "name": "Carlos Diaz",
+    "country_name": "West Indies",
+    "player_category": "Batsman",
+    "rating": 82,
+    "batting_style": "Right-hand",
+    "price": 1000000
+  },
+  {
+    "id": 6,
+    "image": "image_006.jpg",
+    "name": "Jacques Dupont",
+    "country_name": "South Africa",
+    "player_category": "Bowler",
+    "rating": 75,
+    "batting_style": "Left-hand",
+    "price": 780000
+  },
+  {
+    "id": 7,
+    "image": "image_007.jpg",
+    "name": "Kenji Nakamura",
+    "country_name": "Japan",
+    "player_category": "All-Rounder",
+    "rating": 65,
+    "batting_style": "Right-hand",
+    "price": 700000
+  },
+  {
+    "id": 8,
+    "image": "image_008.jpg",
+    "name": "Arjun Patel",
+    "country_name": "India",
+    "player_category": "Batsman",
+    "rating": 92,
+    "batting_style": "Right-hand",
+    "price": 1300000
+  },
+  {
+    "id": 9,
+    "image": "image_009.jpg",
+    "name": "Shane Walker",
+    "country_name": "New Zealand",
+    "player_category": "Bowler",
+    "rating": 79,
+    "batting_style": "Left-hand",
+    "price": 820000
+  },
+  {
+    "id": 10,
+    "image": "image_010.jpg",
+    "name": "Mario Costa",
+    "country_name": "Italy",
+    "player_category": "All-Rounder",
+    "rating": 68,
+    "batting_style": "Right-hand",
+    "price": 650000
+  },
+  {
+    "id": 11,
+    "image": "image_011.jpg",
+    "name": "Shakib Ahmed",
+    "country_name": "Bangladesh",
+    "player_category": "All-Rounder",
+    "rating": 88,
+    "batting_style": "Left-hand",
+    "price": 1150000
+  },
+  {
+    "id": 12,
+    "image": "image_012.jpg",
+    "name": "Tamim Rahman",
+    "country_name": "Bangladesh",
+    "player_category": "Batsman",
+    "rating": 80,
+    "batting_style": "Left-hand",
+    "price": 900000
+  },
+  {
+    "id": 13,
+    "image": "image_013.jpg",
+    "name": "Mahmud Hassan",
+    "country_name": "Bangladesh",
+    "player_category": "Bowler",
+    "rating": 77,
+    "batting_style": "Right-hand",
+    "price": 830000
+  },
+  {
+    "id": 14,
+    "image": "image_014.jpg",
+    "name": "Chris O'Neal",
+    "country_name": "Ireland",
+    "player_category": "Batsman",
+    "rating": 74,
+    "batting_style": "Right-hand",
+    "price": 680000
+  },
+  {
+    "id": 15,
+    "image": "image_015.jpg",
+    "name": "Rashid Noor",
+    "country_name": "Afghanistan",
+    "player_category": "Bowler",
+    "rating": 83,
+    "batting_style": "Right-hand",
+    "price": 950000
+  }
+]
