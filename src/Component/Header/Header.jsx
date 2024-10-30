@@ -3,7 +3,7 @@ import { TbCoinBitcoin } from "react-icons/tb";
 import PropTypes from "prop-types";
 const Header = ({ coin }) => {
   return (
-    <div className="w-11/12 mx-auto flex justify-between items-center pt-12 pb-6">
+    <div className="w-11/12 mx-auto flex justify-between items-center pt-8 pb-6">
       <div>
         <img src={logo} alt="" />
       </div>
