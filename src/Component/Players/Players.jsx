@@ -6,6 +6,7 @@ import BookMarks from "../Bookmarks/BookMarks";
 const Players = () => {
   const [players, setPlayers] = useState([]);
   const [playerLists, setPlayerLists] = useState([]);
+  const [isDisable, setDisable] = useState(false);
 
   useEffect(() => {
     fetch("player.json")
@@ -15,8 +16,15 @@ const Players = () => {
   const HendleAddPlayer = (selectPlayer) => {
     const newPlayerLists = [...playerLists, selectPlayer];
     setPlayerLists(newPlayerLists);
+    setDisable(true);
   };
-
+  const hendleDeletePlayer = (player) => {
+    const newPlayerLists = playerLists.filter(
+      (bookMark) => bookMark.id !== player
+    );
+    setPlayerLists(newPlayerLists);
+    setDisable(false);
+  };
   return (
     <div>
       <div className="flex justify-between items-center mb-8">
@@ -35,12 +43,16 @@ const Players = () => {
           <Player
             key={idx}
             HendleAddPlayer={HendleAddPlayer}
+            isDisable={isDisable}
             player={player}
           ></Player>
         ))}
       </div>
       <div>
-        <BookMarks playerLists={playerLists}></BookMarks>
+        <BookMarks
+          hendleDeletePlayer={hendleDeletePlayer}
+          playerLists={playerLists}
+        ></BookMarks>
       </div>
     </div>
   );

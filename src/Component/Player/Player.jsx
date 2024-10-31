@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import { LuFlag } from "react-icons/lu";
-const Player = ({ player, HendleAddPlayer }) => {
+const Player = ({ player, HendleAddPlayer, isDisable }) => {
   const {
+    id,
     image,
     name,
     country_name,
@@ -40,6 +41,7 @@ const Player = ({ player, HendleAddPlayer }) => {
         <button
           onClick={() => HendleAddPlayer(player)}
           className="border-2 py-2 px-4 rounded-lg hover:bg-gray-100"
+          disabled={isDisable}
         >
           Choose Player
         </button>
@@ -49,6 +51,7 @@ const Player = ({ player, HendleAddPlayer }) => {
 };
 Player.propTypes = {
   player: PropTypes.object,
-  HendleAddPlayer: PropTypes.func ,
+  HendleAddPlayer: PropTypes.func,
+  isDisable: PropTypes.func,
 };
 export default Player;
