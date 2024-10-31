@@ -1,14 +1,22 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import Player from "../Player/Player";
+import BookMarks from "../Bookmarks/BookMarks";
 
 const Players = () => {
   const [players, setPlayers] = useState([]);
+  const [playerLists, setPlayerLists] = useState([]);
+
   useEffect(() => {
     fetch("player.json")
       .then((res) => res.json())
       .then((data) => setPlayers(data));
   }, []);
+  const HendleAddPlayer = (selectPlayer) => {
+    const newPlayerLists = [...playerLists, selectPlayer];
+    setPlayerLists(newPlayerLists);
+  };
+
   return (
     <div>
       <div className="flex justify-between items-center mb-8">
@@ -18,14 +26,21 @@ const Players = () => {
             Available
           </button>
           <button className="border-2 py-4 px-8 rounded-r-2xl">
-            Selected(0)
+            Selected({playerLists.length})
           </button>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {players.map((player, idx) => (
-          <Player key={idx} player={player}></Player>
+          <Player
+            key={idx}
+            HendleAddPlayer={HendleAddPlayer}
+            player={player}
+          ></Player>
         ))}
+      </div>
+      <div>
+        <BookMarks playerLists={playerLists}></BookMarks>
       </div>
     </div>
   );

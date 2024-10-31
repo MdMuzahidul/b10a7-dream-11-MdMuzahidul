@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { LuFlag } from "react-icons/lu";
-const Player = ({ player }) => {
+const Player = ({ player, HendleAddPlayer }) => {
   const {
     image,
     name,
@@ -37,12 +37,18 @@ const Player = ({ player }) => {
       </div>
       <div className="flex justify-between items-center">
         <p>Price: ${price}</p>
-        <button className="border-2 py-2 px-4 rounded-lg hover:bg-gray-100">Choose Player</button>
+        <button
+          onClick={() => HendleAddPlayer(player)}
+          className="border-2 py-2 px-4 rounded-lg hover:bg-gray-100"
+        >
+          Choose Player
+        </button>
       </div>
     </div>
   );
 };
 Player.propTypes = {
   player: PropTypes.object,
+  HendleAddPlayer: PropTypes.func ,
 };
 export default Player;
