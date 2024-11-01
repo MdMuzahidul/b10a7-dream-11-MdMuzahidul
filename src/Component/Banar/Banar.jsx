@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Banar = ({ hendleAddCoin }) => {
   return (
     <div>
-      <div className="bg h-[600px] w-11/12 mx-auto flex flex-col items-center py-16 px-44 rounded-r-xl">
+      <div className="bg text-white  bg-[#050506] h-[600px] w-11/12 mx-auto flex flex-col items-center py-16 px-44 rounded-r-xl relative top-40">
         <div className="mb-6">
           <img src={banar} alt="" />
         </div>
@@ -15,8 +15,8 @@ const Banar = ({ hendleAddCoin }) => {
         </p>
         <div className="border-2 p-2 rounded-2xl border-[#E7FE29]">
           <button
-            onClick={() => hendleAddCoin(1000000)}
-            className="btn p-3 bg-[#E7FE29] font-bold rounded-xl"
+            onClick={() => hendleAddCoin(5000000)}
+            className="btn p-3 text-black bg-[#E7FE29] font-bold rounded-xl"
           >
             Clime Free Credit
           </button>

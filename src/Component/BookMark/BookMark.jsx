@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 const BookMark = ({ bookMark, hendleDeletePlayer }) => {
-  const { id, image, name, batting_style } = bookMark;
+  const { image, name, batting_style } = bookMark;
   return (
     <div className="flex justify-between items-center border-2 rounded-2xl p-8 my-6">
       <div className="flex items-center gap-4">
@@ -16,7 +16,9 @@ const BookMark = ({ bookMark, hendleDeletePlayer }) => {
       </div>
       <div>
         <button
-          onClick={() => hendleDeletePlayer(id)}
+          onClick={() => {
+            hendleDeletePlayer(bookMark);
+          }}
           className="text-3xl"
         >
           {" "}
@@ -30,5 +32,6 @@ const BookMark = ({ bookMark, hendleDeletePlayer }) => {
 BookMark.propTypes = {
   bookMark: PropTypes.object,
   hendleDeletePlayer: PropTypes.object,
+  hendleAddPlayerMoney: PropTypes.object,
 };
 export default BookMark;
